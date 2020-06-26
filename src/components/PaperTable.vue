@@ -8,10 +8,12 @@
     <tbody>
     <tr v-for="(item, index) in data" :key="index">
       <slot :row="item">
-        <td v-for="(column, index) in columns"
+        <td v-for="(info, index) in item"
             :key="index"
-            v-if="hasValue(item, column)">
-          {{itemValue(item, column)}}
+            >
+          <p v-for="(i, ind) in info" :key="ind">
+            {{ ind.split('_')[0].toUpperCase() }} {{ ind.split('_')[1].toUpperCase() }}: {{ i }}
+          </p>
         </td>
       </slot>
     </tr>

@@ -2,13 +2,11 @@
   <div class="wrapper">
     <side-bar>
       <template slot="links">
-        <sidebar-link to="/dashboard" name="Dashboard" icon="ti-panel"/>
-        <sidebar-link to="/stats" name="User Profile" icon="ti-user"/>
-        <sidebar-link to="/table-list" name="Table List" icon="ti-view-list-alt"/>
-        <sidebar-link to="/typography" name="Typography" icon="ti-text"/>
-        <sidebar-link to="/icons" name="Icons" icon="ti-pencil-alt2"/>
-        <sidebar-link to="/maps" name="Map" icon="ti-map"/>
-        <sidebar-link to="/notifications" name="Notifications" icon="ti-bell"/>
+        <!-- <sidebar-link to="/dashboard" name="Dashboard" icon="ti-panel"/> -->
+        <sidebar-link to="/user-settings" name="User Settings" icon="ti-panel"/>
+        <sidebar-link to="/apn-fcm-notifications" name="APN/FCM notifications" icon="ti-mobile"/>
+        <sidebar-link to="/apn-connection-status" name="APN Connection Status" icon="ti-harddrives"/>
+        <sidebar-link to="/offline-sms" name="Offline Messages" icon="ti-email"/>
       </template>
       <mobile-menu>
         <li class="nav-item">

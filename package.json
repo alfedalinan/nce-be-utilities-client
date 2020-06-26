@@ -11,11 +11,13 @@
     "dev": "npm run serve"
   },
   "dependencies": {
+    "@johmun/vue-tags-input": "^2.1.0",
     "bootstrap": "^4.0.0",
     "chartist": "^0.11.0",
     "es6-promise": "^4.2.4",
     "vue": "^2.6.10",
     "vue-clickaway": "^2.1.0",
+    "vue-input-tag": "^2.0.7",
     "vue-notifyjs": "^0.3.0",
     "vue-router": "^3.0.1"
   },
@@ -26,6 +28,7 @@
     "@vue/eslint-config-prettier": "^5.0.0",
     "node-sass": "^4.8.3",
     "sass-loader": "^6.0.7",
+    "vue-good-table": "^2.19.3",
     "vue-template-compiler": "^2.6.10"
   },
   "description": "A sample admin dashboard based on paper dashboard UI template",

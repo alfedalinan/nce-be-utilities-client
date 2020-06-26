@@ -20,7 +20,11 @@ import router from "./router/index";
 import PaperDashboard from "./plugins/paperDashboard";
 import "vue-notifyjs/themes/default.css";
 
+import VueGoodTablePlugin from "vue-good-table";
+import "vue-good-table/dist/vue-good-table.css";
+
 Vue.use(PaperDashboard);
+Vue.use(VueGoodTablePlugin);
 
 /* eslint-disable no-new */
 new Vue({

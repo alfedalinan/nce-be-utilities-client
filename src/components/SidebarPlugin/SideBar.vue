@@ -43,7 +43,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Paper Dashboard"
+      default: "NCE BE Utiities v2.0"
     },
     backgroundColor: {
       type: String,
@@ -126,6 +126,7 @@ export default {
     }
   },
   mounted() {
+    console.log(this.links);
     this.$watch("$route", this.findActiveLink, {
       immediate: true
     });
