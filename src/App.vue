@@ -37,4 +37,25 @@ export default {};
     transform: scale(1.2, 0.7);
   }
 }
+.navbar.navbar-light {
+  background-color: #e3543c !important;
+}
+.navbar .navbar-brand {
+  color: #efefef !important;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #efefef !important;
+}
+.navbar .nav-link p {
+  color: #efefef !important;
+}
+.btn {
+ background: #e3543c !important; 
+ border-color: #e3543c !important;
+}
+.content th { 
+ background: #e3543c !important; 
+ border-color: #e3543c !important;
+ color: #efefef !important;
+}
 </style>

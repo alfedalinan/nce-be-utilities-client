@@ -10,7 +10,7 @@
     <div class="sidebar-wrapper" id="style-3">
       <div class="logo">
         <a href="#" class="simple-text">
-            <div class="logo-img">
+            <div class="logo-img" style="visibility: hidden;">
                 <img src="@/assets/img/vue-logo.png" alt="">
             </div>
           {{title}}
@@ -47,9 +47,9 @@ export default {
     },
     backgroundColor: {
       type: String,
-      default: "black",
+      default: "orange",
       validator: value => {
-        let acceptedValues = ["white", "black", "darkblue"];
+        let acceptedValues = ["white", "black", "darkblue", "orange"];
         return acceptedValues.indexOf(value) !== -1;
       }
     },

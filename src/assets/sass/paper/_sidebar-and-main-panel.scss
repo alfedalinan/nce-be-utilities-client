@@ -132,6 +132,9 @@
   &[data-background-color="black"] {
     @include sidebar-background-color($black-background-color, $white-color);
   }
+  &[data-background-color="orange"] {
+    @include sidebar-background-color($e-horizon-orange, $white-color);
+  }
   &[data-background-color="darkblue"] {
     @include sidebar-background-color($darkblue-background-color, $white-color);
   }
