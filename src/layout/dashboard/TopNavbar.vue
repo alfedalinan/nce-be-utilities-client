@@ -20,14 +20,14 @@
             </a>
           </li> -->
           <drop-down class="nav-item"
-                     title="5 Notifications"
+                     title="My Account"
                      title-classes="nav-link"
-                     icon="ti-bell">
-            <a class="dropdown-item" href="#">Notification 1</a>
-            <a class="dropdown-item" href="#">Notification 2</a>
-            <a class="dropdown-item" href="#">Notification 3</a>
+                     icon="ti-user">
+            <a class="dropdown-item" href="#"> <i class="ti-pencil"></i> My Info</a>
+            <a class="dropdown-item" href="#">  <i class="ti-settings"></i>  Settings</a>
+            <!-- <a class="dropdown-item" href="#">Notification 3</a>
             <a class="dropdown-item" href="#">Notification 4</a>
-            <a class="dropdown-item" href="#">Another notification</a>
+            <a class="dropdown-item" href="#">Another notification</a> -->
           </drop-down>
           <!-- <li class="nav-item">
             <a href="#" class="nav-link">
