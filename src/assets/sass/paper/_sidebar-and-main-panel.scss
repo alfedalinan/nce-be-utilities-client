@@ -143,7 +143,7 @@
     @include sidebar-active-color($info-color);
   }
   &[data-active-color="success"] {
-    @include sidebar-active-color($success-color);
+    @include sidebar-active-color($link-ehorizon);
   }
   &[data-active-color="warning"] {
     @include sidebar-active-color($warning-color);
@@ -155,7 +155,7 @@
 }
 
 .main-panel {
-  background-color: $bg-nude;
+  background-color: $medium-gray;
   position: relative;
   z-index: 2;
   float: right;

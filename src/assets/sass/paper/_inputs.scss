@@ -184,3 +184,21 @@ textarea.form-control {
   resize: none;
 }
 
+
+
+// CUSTOM DESIGN GOES HERE
+
+// .vue-input-tag-wrapper {
+//   border-color: $link-ehorizon;
+// }
+
+.form-control {
+  border: medium $link-ehorizon;
+}
+
+.vue-input-tag-wrapper .input-tag,
+.vue-input-tag-wrapper .input-tag .remove {
+  background-color: $link-ehorizon;
+  border: 1px solid $link-ehorizon;
+  color: $white-color;
+}

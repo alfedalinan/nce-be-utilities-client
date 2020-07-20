@@ -4,10 +4,11 @@
 
         <div class="col-lg-4 col-md-4 col-sm-4">
 
-            <select class="form-control" v-model="key" @change="changeEnv($event)">
+            <!-- <select class="form-control" v-model="key" @change="changeEnv($event)">
+
                 <option value="">- Select Environment - </option>
                 <option value="junyverse">Junyverse Sweden</option>
-            </select>
+            </select> -->
 
         </div>
     
@@ -66,19 +67,22 @@ export default {
         }
     },
     methods: {
-        changeEnv(event) {
+        changeEnv() {
             this.showSpin = true;
             this.showTable = false;
 
             setTimeout(() => {
                 this.showSpin = false;
                 
-                if (this.key != '') {
+                // if (this.key != '') {
                     this.showTable = true;
-                }
+                // }/
 
             }, 1500);
         }
+    },
+    mounted() {
+        this.changeEnv();
     }
 }
 </script>

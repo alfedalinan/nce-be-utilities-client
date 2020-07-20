@@ -16,7 +16,7 @@
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 
   &.navbar-light {
-    background-color: $bg-nude;
+    background-color: $bg-ehorizon;
     box-shadow: none;
     border-bottom: 1px solid $medium-gray;
   }
@@ -29,7 +29,7 @@
     margin: $navbar-margin-brand;
     padding: $navbar-padding-brand;
     font-size: $font-size-base;
-    color: $default-color;
+    color: $link-ehorizon;
     text-transform: uppercase;
   }
   .nav-link{
@@ -44,7 +44,7 @@
     }
     p{
       margin: 0px 0px;
-      color: #9A9A9A !important;
+      color: $link-ehorizon !important;
       text-transform: uppercase;
       font-weight: 600;
       font-size: 12px;
@@ -52,7 +52,7 @@
       padding: 15px 0;
     }
     p:hover{
-      color: #403D39 !important;
+      color: $link-ehorizon !important;
     }
   }
   .navbar-nav{
@@ -64,10 +64,10 @@
       font-size: $font-size-small;
       text-transform: uppercase;
       font-weight: 600;
-      color: $default-color;
+      color: $link-ehorizon;
 
       &:hover{
-        color: $font-color;
+        color: $link-ehorizon;
       }
     }
     .nav-item .nav-link.btn{
@@ -177,8 +177,8 @@
     &:focus,
     &:hover{
       background-color: transparent;
-      @include opacity(1);
-      color: $white-color;
+      // @include opacity(1);
+      color: $link-ehorizon !important;
     }
   }
 
@@ -193,7 +193,8 @@
     .nav-item .nav-link:hover,
     .nav-item .nav-link:focus{
       background-color: transparent;
-      color: $white-color;
+      // color: $white-color;
+      color: $link-ehorizon;
       @include opacity(1);
     }
     .nav .nav-item a.btn:hover{
@@ -211,7 +212,7 @@
     .open .nav-link:hover,
     .open .nav-link:focus {
       background-color: transparent;
-      color: $default-color;
+      color: $link-ehorizon;
       @include opacity(1);
     }
   }
@@ -352,7 +353,8 @@
 // stefan making edits
 
 .navbar-light .navbar-nav .nav-link:hover{
-  color: $light-gray;
+  // color: $light-gray;
+  color: $link-ehorizon;
 }
 
 .red{
@@ -363,11 +365,11 @@
 }
 
 .navbar-default .navbar-brand{
-  color: $default-color;
+  color: $link-ehorizon;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus{
-  color: #5e5e5e;
+  color: $link-ehorizon !important;
 }
 .navbar-collapse.show{
   .navbar-nav{
@@ -490,7 +492,8 @@
   .collapse{
     .navbar-nav{
       a{
-        color: $black-color;
+        // color: $black-color;
+        color: $link-ehorizon;
       }
     }
   }

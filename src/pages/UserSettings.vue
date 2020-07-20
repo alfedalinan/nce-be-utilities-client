@@ -1,16 +1,16 @@
 <template>
     <div class="row">
-      <div class="col-xl-4 col-lg-4 col-md-4">
+      <!-- <div class="col-xl-4 col-lg-4 col-md-4">
           <select class="form-control">
               <option value="">- Select Environment -</option>
               <option value="junyverse">Junyverse Sweden</option>
           </select>
-      </div>
+      </div> -->
       <div class="col-xl-6 col-lg-6 col-md-6">
           <input-tag v-model="tags" placeholder="Enter ID or MSISDN (GSM)"></input-tag>
       </div>
       <div class="col-xl-2 col-lg-2 col-md-2">
-          <button v-on:click="fetchData()" class="btn btn-secondary" type="button">Submit</button>
+          <button v-on:click="fetchData()" class="btn btn-eh" type="button">Submit</button>
       </div>
 
       <div class="col-12" id="userSettings" >
@@ -23,7 +23,7 @@
             </paper-table>
           </div>
         </card> -->
-
+        
         <vue-good-table v-if="showTable"
         :columns="columns" 
         :rows="rows">
@@ -79,7 +79,7 @@ export default {
         InputTag
     },
     props: {
-        showTable: true,
+        showTable: false,
         showSpin: false
     },
     data() {
@@ -202,35 +202,35 @@ export default {
                         updated: "2020-06-22 08:49:10"
                     }
                 },
-                // {
-                //     id: {
-                //         name: "83441112586",
-                //         status: "OFFLINE"
-                //     },
-                //     verification_code: {
-                //         code: "2375",
-                //         created: "2020-06-22 08:51:43"
-                //     },
-                //     account_info: {
-                //         id: "80030111976",
-                //         first_name: "Pey",
-                //         last_name: "Juny",
-                //         contact_phone: "639260458637",
-                //         email: "pids@juny.com",
-                //         created: "2020-06-11 09:41:01",
-                //         reg_status: "Registered",
-                //         expiry: " 2021-06-11 09:51:05"
-                //     },
-                //     last_known_device: {
-                //         os_version: "12.7",
-                //         os: "iOS",
-                //         app_version: "1.0.0.0",
-                //         network: 1,
-                //         roaming: 0,
-                //         country: "ph",
-                //         updated: "2020-06-22 08:49:10"
-                //     }
-                // }
+                {
+                    id: {
+                        name: "83441112586",
+                        status: "OFFLINE"
+                    },
+                    verification_code: {
+                        code: "1125",
+                        created: "2020-06-22 08:53:50"
+                    },
+                    account_info: {
+                        id: "80030111976",
+                        first_name: "Pey",
+                        last_name: "Juny",
+                        contact_phone: "639260458637",
+                        email: "pids@juny.com",
+                        created: "2020-06-11 09:41:01",
+                        reg_status: "Registered",
+                        expiry: " 2021-06-11 09:51:05"
+                    },
+                    last_known_device: {
+                        os_version: "12.7",
+                        os: "iOS",
+                        app_version: "1.0.0.0",
+                        network: 1,
+                        roaming: 0,
+                        country: "ph",
+                        updated: "2020-06-22 08:49:15"
+                    }
+                }
             ];
 
             // First Column
@@ -277,16 +277,11 @@ export default {
         }
     },
     mounted() {
-        this.showTable = true;
     }
 }
 </script>
 <style>
-.vue-input-tag-wrapper .input-tag {
-    background-color: #41B883;
-    border: 1px solid #41B883;
-    color: #e9ecef;
-}
+
 .generic-spin {
     width: 35%;
 }

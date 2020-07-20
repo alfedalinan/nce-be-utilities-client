@@ -218,3 +218,25 @@
     }
   }
 }
+
+.btn-eh {
+  background-color: $link-ehorizon;
+  border-color: $link-ehorizon;
+  color: $white-color;
+  
+  &:hover {
+    background-color: $link-ehorizon;
+    border-color: $link-ehorizon;
+    color: $white-color;
+  }
+  &:active {
+    background-color: $link-ehorizon;
+    border-color: $link-ehorizon;
+    color: $white-color;
+  }
+  &:focus {
+    background-color: $link-ehorizon;
+    border-color: $link-ehorizon;
+    color: $white-color;
+  }
+}
